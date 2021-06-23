@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Playfair Display', serif;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   filter: grayscale(100%);
   height: auto;
 }
@@ -65,16 +65,24 @@ header {
   text-align: center;
   flex-direction: column;
 }
-header > * {
-  margin-top: 50px;
+header h1,header figure > *{
+  margin: 40px 0;
 }
 
 header #image {
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
-  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
+header #tribute-link {
+  background:#ffffffe0;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: .5rem 2rem;
+}
+
+
 
 section {
   padding-top: 5rem;
@@ -123,7 +131,7 @@ section h2{
 }
 
 
-.gallery ul {
+.gallery .img-div {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   gap: 20px;

@@ -12,7 +12,7 @@
   <title>my tribute page</title>
 </head>
 <body>
-  <main class="main">
+  <main id="main">
     <nav>
       <ul class="menu">
         <li><a href="#about"> about </a></li>
@@ -22,9 +22,16 @@
       </ul>
     </nav>
     <header id="about">
-      <h1 class="title"> Donnie yen</h1>
-      <img src="img/DN.jpg" id="image" alt="#"/>
-      <p> is a Hong Kong actor, martial artist, film director, producer, action choreographer, stuntman, and multiple-time world wushu tournament champion</p>
+      <h1 id="title"> Donnie yen</h1>
+      <figure id="img-div">
+        <img src="img/DN.jpg" id="image" alt="#"/>
+        <figcaption id="img-caption"> 
+        <p id="tribute-info">
+          is a Hong Kong actor, martial artist, film director, producer, action choreographer, stuntman, and multiple-time world wushu tournament champion
+        </p>
+        </figcaption>
+      </figure>
+      <a href="https://en.m.wikipedia.org/wiki/Donnie_Yen" target="_blank" id="tribute-link"> read more </a>
     </header>
     
     <section id="film" class="movies">
@@ -130,18 +137,18 @@
     </section>
     <section id="gallery" class="gallery">
       <h2> gallery </h2>
-      <ul>
-        <li><img src="img/gallery/1.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/2.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/3.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/4.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/5.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/6.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/7.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/8.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/9.jpg" alt="donie yen"></li>
-        <li><img src="img/gallery/10.jpg" alt="donie yen"></li>
-      </ul>
+      <div class="img-div">
+          <div><img id="image" src="img/gallery/1.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/2.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/3.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/4.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/5.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/6.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/7.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/8.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/9.jpg" alt="donie yen"></div>
+          <div><img id="image" src="img/gallery/10.jpg" alt="donie yen"></div>
+      </div>
     </section>
     <footer>
       <p> follow donie </p>
